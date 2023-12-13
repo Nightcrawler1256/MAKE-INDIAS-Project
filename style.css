@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 65px;
+    padding: 64px 64px;
+    /* height: 929px; */
+    width: 100vw;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.heading {
+    font-size: 48px;
+    line-height: 56px;
+    color: #3C4852;
+    /* letter-spacing: -0.01em; */
+    margin-bottom: 10px;
+
+
+}
+
+
+.contact {
+    margin-top: 20px;
+    width: 80%;
+    height: 40px;
+    border-width: 1px;
+    border: 1px solid rgb(20, 19, 19);
+    border-radius: 9px;
+}
+
+.confirm {
+    color: #7A8B94;
+}
+
+.btn {
+    margin-top: 20px;
+    width: 80%;
+    height: 40px;
+    border-width: 1px;
+    border: 1px solid black;
+    border-radius: 9px;
+    background-color: #364049;
+    color: white;
+    font-size: medium;
+}
+
+.btn:hover {
+    background-color: #323538;
+}
+@media (max-width:760px){
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .heading{
+        width: 100%;
+        align-items: center;
+    }
+    .container2{
+        width: 100vw;
+        align-items: center;
+    }
+    .para{
+        width: 100vw;
+        text-align: center;
+    }
+}
+.section{
+    padding: 64px 64px;
+    height: auto;
+    width: 100vw;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+    padding: 0 30px;
+    padding-bottom: 20px;
+    width: 100vw;
+}
+.card{
+    display: flex;
+    width: 290px;
+    height: 280px;
+    align-items: center;
+    border: 1px solid #E9EEF2;
+    border-radius: 10px;
+    justify-content: center;
+    padding-top: 40px;
+    text-align: center;
+}
+
+ ::-webkit-scrollbar{display: none;}
+
+ .card:hover{
+    background-color: #F7F9FB;
+ }
+
+ @media (max-width:760px){
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 280px;
+        height: auto;
+
+    }
+    
+ }
